@@ -68,6 +68,7 @@ def training(model, loss_function, optimizer, model_ready_data_creator, schedule
         if early_stopping:
             early_stopping(validation_epoch_loss)
             if early_stopping.early_stop:
+                best_model_weights = copy.deepcopy(model.state_dict())
                 break
 
         if validation_epoch_accuracy > best_acc : 

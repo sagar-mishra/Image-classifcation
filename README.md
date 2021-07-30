@@ -25,6 +25,7 @@ This project is a template for image classification. <br>
 * resources : resources like data, images can be placed in this directory
 * trained_model_weights: Trained weights exported to this directory, inside this separate directories will create for each model
 * util : utilities file present in this directory like engine.py, inference_util.py, visualization_util.py etc.
+* notebooks : jupyter notebooks should place here.
 
 ### Installation 
 * pip install requirements.txt

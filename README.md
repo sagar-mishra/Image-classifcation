@@ -4,6 +4,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Running](#running)
 
 ## General info
 This project is a template for image classification. <br>

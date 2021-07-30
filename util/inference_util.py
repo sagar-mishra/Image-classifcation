@@ -64,6 +64,6 @@ def calculate_accuracy(model, data_loader, dataset_sizes, device=config.TRAIN_DE
             predicted_classes.extend(preds.tolist())
             current_corrects += torch.sum(preds == labels.data)
 
-    accuracy = current_corrects/dataset_sizes["test"]
+    accuracy = 100*(current_corrects/dataset_sizes["test"])
 
     return accuracy, original_classes, predicted_classes

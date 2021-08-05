@@ -9,7 +9,7 @@ import torch.optim as optim
 import torch.nn as nn
 from models.resnext_model import ResNextModel
 from sklearn import metrics
-from util.engine import train_loop,eval_loop,loss_function
+from util.train_util import train_loop,eval_loop,loss_function
 from util.model_ready_data_creator import ModelReadyDataCreator
 from util.early_stopping import EarlyStopping
 from util.scheduler import LRScheduler

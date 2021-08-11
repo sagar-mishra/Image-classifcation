@@ -12,7 +12,6 @@ class InceptionV3(nn.Module):
     for param in self.model.parameters():
         param.requires_grad = False   
 
-    # Change the final layer of ResNet50 Model for Transfer Learning
     fc_inputs = self.model.fc.in_features
     self.model.fc = nn.Sequential(
         nn.Linear(fc_inputs, 512),
